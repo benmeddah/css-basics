@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../default.css">
+    <title>Flex</title>
+</head>
+<body>
+    <h1>Flex</h1>
+    <div class="parent">
+        <div> flex-direction : row-reverse
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        </div>
+        <div> flex-wrap : wrap
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        </div>
+        <div> justify-content : center
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        </div>
+        <div> align-items : center
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        </div>
+        <div> #self { flex:1 }
+        <div>1</div>
+        <div>2</div>
+        <div id="self">id=self</div>
+        <div>4</div>
+        </div>
+        
+    </div>
+
+
+
+    <a href="../index.html">CSS</a>
+</body>
+<style>
+    .parent>div:nth-child(1) 
+    {
+        display: flex;
+        flex-direction: row-reverse ; /* row/column-revers */
+    }
+    .parent>div:nth-child(2)
+    {
+        display: flex;
+        width: 30%;
+        flex-wrap: wrap; /*wrap-reverse*/
+
+        
+    }
+    .parent>div:nth-child(3)
+    {
+        display: flex;
+        justify-content: center;/*****/
+    }
+    .parent>div:nth-child(4)
+    {
+        height: 50rem;
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;/****/
+        align-items: center;
+    }
+
+    .parent>div:nth-child(4)>div
+    {
+        width: 50%;
+    }
+    .parent>div:nth-child(5)
+    {
+        display: flex;
+        justify-content: center;/*****/
+    }
+    #self{
+        flex:1;
+    }
+
+    div{
+        margin: 1em;
+        padding: 2em;
+        border: red solid 2px;
+    }
+</style>
+</html>

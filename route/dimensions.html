@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"-->
+    <link rel="stylesheet" href="../default.css">
+    <title>Dimensions</title>
+</head>
+<body>
+    <h1>Dimentions</h1>
+    <div id="height">first div</div>
+    <div id="height">second div</div>
+    <div id="height">third div</div>
+    <div style="width:max-content" id="height">forth div</div>
+    <h1 style="margin-top:4em;">Positions</h1>
+    <div class="fixed">This Is Fixed Div
+            <a style="display: block;" href="../index.html">CSS</a>
+    </div>
+    <div class="relative">This Is Relative Div</div>
+    <div class="parent">Parent Div (With Relative Position)
+        <div class="absolute">This Is Absulate Child</div>
+    </div>
+</body>
+<style>
+    body{
+        height: 2000px;
+        background:#ef5;
+    }
+    #height{
+        float: left;
+        margin-right:0.5%;
+        background: hotpink;
+        min-width: 24.5%;
+        min-height: 5em;
+    }
+    .fixed{
+        position: fixed;
+        bottom:0;
+        left:0;
+        width: 100%;
+        height: 3rem;
+        background: #fff;
+    }
+    .relative{
+        position: relative;
+        left:75%;
+        
+        width: 10rem;
+        height: 10rem;
+        background: #5ef;
+    }
+    .parent{
+        position: relative;
+        bottom:11rem;
+        
+        width: 50%;
+        height: 25rem;
+        background: #0f0;
+    }
+    .absolute{
+        position: absolute;
+        top:0;
+        right: 0;
+        
+        width: 15rem;
+        height: 15rem;
+        background: #aaa;
+    }
+</style>
+</html>

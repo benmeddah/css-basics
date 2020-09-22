@@ -1,0 +1,25 @@
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    text-decoration: line-through;
+}
+li{
+    list-style:disc inside none;/*type position image*/
+}
+/*Border-top : width style color;
+  border-style : top right bottom left;
+*/
+/*margin : auto;
+  margin : top right bottom left;
+*/
+/*padding : auto;
+  padding : top right bottom left;
+*/
+/*
+    list-style: image inset/outset disc/decimal
+    overflow : visible hidden scroll auto;
+*/

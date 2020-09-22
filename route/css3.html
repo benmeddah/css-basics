@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3</title>
+</head>
+<body>
+    
+    <h1>CSS3:Shadow</h1>
+    <span class="shadow">This Text For Test</span>
+    
+    <h1>CSS3:Radius</h1>
+    <span class="raduis">a</span>
+
+    <h1>Word Wrap</h1>
+    <div style="word-wrap: break-word;font-size: xx-large;">VeryLooooooooongWord</div>
+
+    <h1>White Space</h1>
+    <div style="white-space: nowrap;font-size: xx-large;">Very L o o o o o o o o o ng Word</div>
+
+    <h1>OverFlow</h1>
+    <div style="overflow:hidden;text-overflow: ellipsis; font-size: xx-large;">VeryLooooooooongWord</div>
+</body>
+<a href="../index.html">CSS</a>
+<style>
+    .shadow,.raduis{
+        border: red 1px solid;
+        width: 10rem;
+        height: 10rem;
+        margin: auto;
+        display: block;
+    }
+    .shadow{
+        box-shadow: 10px 10px 10px green;/*horiz vertic flou color*/
+        text-shadow: 2px 2px 5px red;
+    }
+    .raduis{
+        border-radius: 10rem 20rem 20rem 0;
+        background-color: green;
+        padding: 5rem;
+        outline: 1rem blue solid;
+        border: #2a7a5a 1rem solid;
+    }
+    div{
+        border: red 1px solid;
+        width: 17%;
+        margin: auto;
+    }
+</style>
+</html>

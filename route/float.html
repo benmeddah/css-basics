@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"-->
+    <link rel="stylesheet" href="../default.css">
+    <title>Float And Clear</title>
+</head>
+<body>
+    <h1>Float And Clear</h1>
+    <div class="floatr">This Is Div Floating Right</div>
+    <div class="floatr">This Is Div Floating Right</div>
+    <div class="floatl">This Is Div Floating Left</div>
+    <h1 class="clear">Clearing Here</h1>
+    <div class="floatl">This Is Div Floating Left</div>
+    <div class="floatl">This Is Div Floating Left</div>
+    <div class="floatr">This Is Div Floating Right</div>
+</body>
+<a class='clear' href="../index.html">CSS</a>
+<style>
+    /*div{ or*/
+    .floatl,.floatr{
+        width: 20%;
+        height: 3rem;
+        padding: 1rem 1rem;
+        margin: 2em 0.5%;
+        color:white
+    }
+    .floatr{
+        background: red; 
+        float: right
+    }
+    .floatl{
+        background: green;
+        float:left
+    }
+    .clear{
+        clear:both;
+        display: block;
+    }
+</style>
+</html>

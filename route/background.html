@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"-->
+    <link rel="stylesheet" href="../default.css">
+    <title>Background</title>
+</head>
+<body>
+    <h1>Background</h1>
+    <ul>
+        <li class="attachment">Attachment</li>
+        <li class="color">Color</li>
+        <li class="image">Image</li>
+        <li class="repeat">Repeat</li>
+        <li class="position">Position</li>
+        <li class="allinone">AllInOne</li>
+    </ul>
+    <a href="../">CSS</a>    
+</body>
+<style>
+    ul > li {
+        width: 20%;
+        height: 200px;
+        border:1px solid red;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .color {
+        background-color: rgb(200, 200, 200);
+    }
+    .image {
+        background-image: url(../assets/image.jpg);
+    }
+    .repeat {
+        background-image: url(../assets/image.jpg);
+        background-repeat: no-repeat;
+    }
+    .attachment{
+        background-image: url(../assets/image.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .position{
+        background-image: url(../assets/image.jpg);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    .allinone{
+        background: url(../assets/image.jpg) #bbbbbb no-repeat scroll top right;
+        width: 50%;
+    }
+
+    
+</style>
+</html>
